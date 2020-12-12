@@ -16,7 +16,6 @@ io.on('connection', socket => {
 })
 
 var routes = require('./routes')
-const { nextTick } = require('process')
 routes(app)
 
 server.listen(port)
