@@ -12,7 +12,7 @@ app.use(function (req, res, next) {
   next()
 })
 io.on('connection', socket => {
-  console.log('Socket Connected: 'socket.id)
+  console.log('Socket Connected: ', socket.id)
 })
 
 var routes = require('./routes')
